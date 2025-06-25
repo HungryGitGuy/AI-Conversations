@@ -1,6 +1,42 @@
 import ollama, json #json is only used to write the conversation to a file
 
-print("")
+print("""
+MIT License
+
+Copyright (c) 2025 Cian Fogarty
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+(the following text is not part of the license)
+
+
+Welcome to my AI conversation program! 
+
+This program is NOT meant to help you chat with an AI. This program is meant to see what happens when 2 AI models are forced to talk to each other. 
+
+You get to see their messages to each other and you control their system messages to allow you to steer the conversation or give them an interesting situation.
+
+The AIs will eventually reach a point where, without human intervention, they will essentially repeat the same thing over and over again, at which point you 
+have to change their system messages or just stop the program.
+
+Enjoy!""")
 
 sessionSelectionStatus = input("sessions are text files that let you reuse system messages and a beginning message. \nWether or not you use a session, a log file will still be created. \n\nenter an existing session name to load an old one, enter a new one to create a new one, or enter nothing to not use a session at all.\nyour input: ")
 
