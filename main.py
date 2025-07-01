@@ -1,4 +1,4 @@
-import ollama, json #json is only used to write the conversation to a file
+import ollama, json, agents #json is only used to write the conversation to a file
 
 print("""
 MIT License
@@ -48,7 +48,10 @@ if sessionSelectionStatus == "":
         model2Name = input("Model 1's name (if none is specified, it will be gemma3): ")
         try:
             ollama.show(model1Name)
-        except
+            ollama.show(model2Name)
+        except:
+            print("one of the given models is not installed. Try again.")
+            exit()
 
     model1Name = model1Name if model1Name != "" else "dolphin-llama3"
     model2Name = model2Name if model2Name != "" else "gemma3"
