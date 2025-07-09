@@ -1,4 +1,4 @@
-import ollama, json, agents #json is only used to write the conversation to a file
+import ollama, json #json is only used to write the conversation to a file
 
 print("""
 MIT License
